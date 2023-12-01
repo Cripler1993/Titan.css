@@ -1,0 +1,178 @@
+/* обнуляем все настройки по умолчанию */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* меняет подсчет ширины блока для удобства */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* убираем линии обводки у браузеров */
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+/* делаем значения блочными */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+/* уравниваем поведение шрифтов и элементов для разных браузеров */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -mos-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* просим теги наследовать семейство шрифта */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+/* убираем некоторые особенности в разных браузерах
+  специфический псевдоэлемент */
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+/* специфический псевдоэлемент */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+/* обнуляем заголовки h */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+:root {
+  --color1: #ffdda0;
+  --color2: rgba(255, 255, 255, 0.7);
+}
+/* универсальные классы */
+.caption__1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sub__header {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+.sub__header-2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.header__1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* header */
+
+header {
+  background-image: url(./img/header/titan\ img.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 1439px;
+}
+.container__row {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: flex-start;
+}
+.header__menu-left {
+  padding: 54px 18px 0px 100px;
+}
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color1);
+  margin-bottom: 178px;
+}
+.name::first-letter {
+  text-transform: capitalize;
+}
+/* right */
+.content__container {
+  border-left: 1px solid #fff;
+  padding: 46px 0px 0px 26px;
+}
+.header__menu-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 49px;
+  margin-bottom: 103px;
+}
+.header__menu-right nav {
+  display: flex;
+  column-gap: 55px;
+}
+nav .caption__1 {
+  color: var(--color2);
+  text-transform: capitalize;
+}
+.secondary__btn {
+  padding: 7px 33px;
+  border-radius: 5px;
+  border: 1px solid #ffdda0;
+  background-color: black;
+  text-transform: capitalize;
+  color: #fff;
+}
+.header__right-title {
+  margin-bottom: 20px;
+}
+.header__right-title .sub__header {
+  line-height: 140.875%;
+}
+.header__right-title .header__1 {
+  line-height: 140.875%;
+}
+.header__right-text {
+  color: #fff;
+  max-width: 602px;
+  line-height: 160%;
+  margin-bottom: 94px;
+}
