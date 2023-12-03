@@ -110,7 +110,7 @@ h6 {
 
 header {
   background-image: url(./img/header/titan\ img.svg);
-  background-size: cover;
+  background-size: none;
   background-repeat: no-repeat;
 }
 .container {
@@ -118,25 +118,59 @@ header {
 }
 .container__row {
   display: flex;
-  /* justify-content: flex-end; */
   align-items: flex-start;
 }
 .header__menu-left {
   padding: 54px 18px 0px 100px;
 }
-.name {
+.header__left-name {
   font-size: 18px;
   font-weight: 700;
   color: var(--color1);
   margin-bottom: 178px;
 }
-.name::first-letter {
+.header__left-name::first-letter {
   text-transform: capitalize;
+}
+.circles__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 36px;
+  margin-bottom: 143px;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 43px;
+  border: 1px solid #ffdda0;
+}
+.point {
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.header__left-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 44px;
+}
+.header__left-footer p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
 }
 /* right */
 .content__container {
   border-left: 1px solid #fff;
-  padding: 46px 0px 0px 26px;
+  padding: 46px 0px 183px 26px;
 }
 .header__menu-right {
   display: flex;
@@ -153,7 +187,7 @@ nav .caption__1 {
   color: var(--color2);
   text-transform: capitalize;
 }
-.secondary__btn {
+.secondary__btn-2 {
   padding: 7px 33px;
   border-radius: 5px;
   border: 1px solid #ffdda0;
@@ -170,9 +204,43 @@ nav .caption__1 {
 .header__right-title .header__1 {
   line-height: 140.875%;
 }
+.header__right-title .header__1::first-letter {
+  text-transform: capitalize;
+}
 .header__right-text {
   color: #fff;
   max-width: 602px;
   line-height: 160%;
   margin-bottom: 94px;
 }
+.header__right-text::first-letter {
+  text-transform: capitalize;
+}
+.header__btns {
+  display: flex;
+  column-gap: 65px;
+}
+.primary__btn {
+  padding: 9px 40px;
+  border-radius: 5px;
+  background: #9b7a3e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.primary__btn img {
+  margin-left: 27px;
+}
+.secondary__btn {
+  padding: 9px 42px;
+  border: 0.807px solid #fff;
+  border-radius: 4px;
+  background: black;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* !background image  не встает, градиент не отображается? */
+/* hover на кнопки */
