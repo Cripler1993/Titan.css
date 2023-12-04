@@ -85,8 +85,14 @@ h6 {
 :root {
   --color1: #ffdda0;
   --color2: rgba(255, 255, 255, 0.7);
+  --color3: #dfc28c;
 }
 /* универсальные классы */
+.display__2 {
+  font-size: 144px;
+  font-weight: 400;
+  letter-spacing: 25.92px;
+}
 .caption__1 {
   font-size: 18px;
   font-weight: 600;
@@ -105,12 +111,18 @@ h6 {
   color: #fff;
   font-weight: 300;
 }
+.body__1 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 /* header */
 
-header {
-  background-image: url(./img/header/titan\ img.svg);
-  background-size: none;
+.header__img {
+  background-color: black;
+  background-image: url(./img/header/header\ Background.svg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .container {
@@ -242,5 +254,112 @@ nav .caption__1 {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* !background image  не встает, градиент не отображается? */
+/* powered by */
+.powered__by {
+  display: flex;
+  justify-content: flex-start;
+  background-image: radial-gradient(
+    103.78% 43.39% at 50% 42.4%,
+    #2c2923 0%,
+    #000 100%
+  );
+}
+.main__left-container {
+  width: 177px;
+}
+.main__right-container {
+  border-left: 1px solid #fff;
+  padding: 39px 0px 0px 29px;
+}
+.powered__row {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  margin-bottom: 19px;
+}
+.powered__row .header__1::first-letter {
+  text-transform: capitalize;
+}
+.powered__row .sub__header {
+  color: var(--color3);
+  margin-right: 8px;
+}
+.powered__row div {
+  display: flex;
+  align-items: center;
+}
+.powered__row .sub__header {
+  text-transform: capitalize;
+}
+.components__block {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.02) 26.31%,
+    rgba(255, 255, 255, 0.08) 57.91%,
+    rgba(255, 255, 255, 0.12) 95.78%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 67px;
+  margin-bottom: 39px;
+  padding: 30px 0px 30px 106px;
+  column-gap: 29px;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.components__item-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.components__item-column .sub__header {
+  font-weight: 400;
+  line-height: 26px;
+}
+.components__item-column .sub__header-2 {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 35px;
+}
+.design {
+  position: relative;
+  margin-bottom: 53px;
+}
+.design .display__2 {
+  color: #b49e76;
+  text-transform: capitalize;
+  opacity: 0.2;
+}
+.design .header__1 {
+  position: absolute;
+  bottom: 10px;
+}
+.design .header__1::first-letter {
+  text-transform: capitalize;
+}
+.power__suply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
+  margin-bottom: 91px;
+}
+.power__suply img {
+  position: relative;
+  top: 25px;
+}
+.power__suply p:nth-child(2) {
+  margin-bottom: 21px;
+}
+.power__suply .sub__header {
+  line-height: 33.6px;
+  text-transform: uppercase;
+}
+.power__suply .body__1 {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 20.56px;
+}
+
+/* !background image  не встает на cover, в другом случае встает идеально, На header появляется полоса*/
 /* hover на кнопки */
