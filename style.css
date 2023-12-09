@@ -39,6 +39,7 @@ body {
   -ms-text-size-adjust: 100%;
   -mos-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: #000;
 }
 /* просим теги наследовать семейство шрифта */
 input,
@@ -127,19 +128,25 @@ h6 {
 }
 .container {
   max-width: 1439px;
+  margin: 0 auto;
 }
 .container__row {
   display: flex;
   align-items: flex-start;
 }
 .header__menu-left {
-  padding: 54px 18px 0px 100px;
+  width: 175px;
+  padding: 54px 18px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .header__left-name {
   font-size: 18px;
   font-weight: 700;
   color: var(--color1);
   margin-bottom: 178px;
+  text-align: center;
 }
 .header__left-name::first-letter {
   text-transform: capitalize;
@@ -171,6 +178,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   row-gap: 44px;
+  margin-right: -10px;
 }
 .header__left-footer p {
   color: #fff;
@@ -181,6 +189,7 @@ h6 {
 }
 /* right */
 .content__container {
+  width: 100%;
   border-left: 1px solid #fff;
   padding: 46px 0px 183px 26px;
 }
@@ -255,19 +264,22 @@ nav .caption__1 {
   text-transform: uppercase;
 }
 /* powered by */
-.powered__by {
-  display: flex;
-  justify-content: flex-start;
+.gradient {
   background-image: radial-gradient(
     103.78% 43.39% at 50% 42.4%,
     #2c2923 0%,
     #000 100%
   );
 }
+.powered__by {
+  display: flex;
+  justify-content: flex-start;
+}
 .main__left-container {
-  width: 177px;
+  width: 178px;
 }
 .main__right-container {
+  width: 100%;
   border-left: 1px solid #fff;
   padding: 39px 0px 0px 29px;
 }
@@ -291,7 +303,20 @@ nav .caption__1 {
 .powered__row .sub__header {
   text-transform: capitalize;
 }
+.components__container {
+  /* position: relative; */
+  /* max-width: 811px; */
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: flex-end;
+  height: 138px;
+  margin-top: 67px;
+  margin-bottom: 39px;
+}
 .components__block {
+  max-width: 811px;
+  /* position: absolute;
+  right: -54%; */
   background-image: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.02) 26.31%,
@@ -301,11 +326,12 @@ nav .caption__1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 67px;
-  margin-bottom: 39px;
-  padding: 30px 0px 30px 106px;
-  column-gap: 29px;
+
+  padding: 30px 136px 30px 136px;
+  column-gap: 109px;
   border-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   opacity: 0.5;
 }
 .components__item-column {
@@ -360,6 +386,66 @@ nav .caption__1 {
   color: rgba(255, 255, 255, 0.6);
   line-height: 20.56px;
 }
+.ground__breaking-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 200px;
+  margin-bottom: 57px;
+}
+.ground__breaking {
+  text-align: left;
+}
+.ground__breaking .header__1 {
+  line-height: normal;
+}
+.ground__breaking .header__1::first-letter {
+  text-transform: capitalize;
+}
+.ground__breaking .body__1 {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 160%;
+  max-width: 604px;
+}
+/* titan v */
 
+.titan__v {
+  display: flex;
+  justify-content: flex-start;
+}
+.titan__v .main__right-container {
+  padding-top: 0px;
+  padding-right: 29px;
+  position: relative;
+}
+.rotate {
+  position: absolute;
+  bottom: -33%;
+  right: -40%;
+  color: #b49e76;
+  opacity: 0.15;
+  transform: rotate(90deg);
+}
+.rotate::first-letter {
+  text-transform: capitalize;
+}
+.titan__learn-more {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 138px;
+}
+.titan__learn-more .header__1 {
+  letter-spacing: 0.72px;
+  line-height: normal;
+}
+.titan__learn-more .header__1::first-letter {
+  text-transform: capitalize;
+}
+.titan__learn-more .body__1 {
+  line-height: normal;
+  opacity: 0.6;
+  max-width: 391px;
+}
 /* !background image  не встает на cover, в другом случае встает идеально, На header появляется полоса*/
 /* hover на кнопки */
+/* column gap увеличил подогнал под макет components container */
