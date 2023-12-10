@@ -300,7 +300,7 @@ nav .caption__1 {
   display: flex;
   align-items: center;
 }
-.powered__row .sub__header {
+.powered__row .sub__header::first-letter {
   text-transform: capitalize;
 }
 .components__container {
@@ -413,6 +413,31 @@ nav .caption__1 {
   display: flex;
   justify-content: flex-start;
 }
+/* .characteristics__relative {
+  position: relative;
+}
+.titan__v-characteristics {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  height: 162px;
+  max-width: 810px;
+}
+.characteristics__right {
+  max-width: 632px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px 63px 32px 29px;
+}
+.right__item-column {
+  display: flex;
+  flex-direction: column;
+}
+.characteristics__right .sub__header-2 {
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.6);
+} */
 .titan__v .main__right-container {
   padding-top: 0px;
   padding-right: 29px;
@@ -420,7 +445,7 @@ nav .caption__1 {
 }
 .rotate {
   position: absolute;
-  bottom: -33%;
+  /* bottom: 0px; */
   right: -40%;
   color: #b49e76;
   opacity: 0.15;
@@ -432,20 +457,54 @@ nav .caption__1 {
 .titan__learn-more {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   column-gap: 138px;
+  margin-bottom: 196px;
 }
 .titan__learn-more .header__1 {
   letter-spacing: 0.72px;
-  line-height: normal;
+  line-height: 70px;
 }
 .titan__learn-more .header__1::first-letter {
   text-transform: capitalize;
 }
 .titan__learn-more .body__1 {
-  line-height: normal;
+  line-height: 17px;
   opacity: 0.6;
   max-width: 391px;
 }
-/* !background image  не встает на cover, в другом случае встает идеально, На header появляется полоса*/
+.learnMore__right-bottom {
+  display: flex;
+  align-items: center;
+}
+.learnMore__right-bottom .sub__header {
+  color: var(--color3);
+  margin-right: 7px;
+}
+.learnMore__right-bottom .sub__header::first-letter {
+  text-transform: capitalize;
+}
+/* gallery */
+.gallery {
+  position: relative;
+  margin-bottom: 35px;
+}
+.gallery .display__2 {
+  color: #b49e76;
+  text-transform: capitalize;
+  opacity: 0.2;
+}
+.gallery__text {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 11.2px;
+  text-transform: capitalize;
+}
+.gallery__row {
+  display: flex;
+}
 /* hover на кнопки */
-/* column gap увеличил подогнал под макет components container */
+/* titan learn more не встает по середине, гэп между элементами? */
