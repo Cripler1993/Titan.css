@@ -263,6 +263,15 @@ nav .caption__1 {
   font-weight: 500;
   text-transform: uppercase;
 }
+@media (max-width: 1365px) {
+  .header__img {
+    max-width: 1021px;
+    background-size: contain;
+  }
+  .container {
+    max-width: 1021px;
+  }
+}
 /* powered by */
 .gradient {
   background-image: radial-gradient(
@@ -304,9 +313,6 @@ nav .caption__1 {
   text-transform: capitalize;
 }
 .components__container {
-  /* position: relative; */
-  /* max-width: 811px; */
-  /* margin: 0 auto; */
   display: flex;
   justify-content: flex-end;
   height: 138px;
@@ -315,8 +321,6 @@ nav .caption__1 {
 }
 .components__block {
   max-width: 811px;
-  /* position: absolute;
-  right: -54%; */
   background-image: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.02) 26.31%,
@@ -413,43 +417,57 @@ nav .caption__1 {
   display: flex;
   justify-content: flex-start;
 }
-/* .characteristics__relative {
+.characteristics__relative {
   position: relative;
 }
 .titan__v-characteristics {
   position: absolute;
+  left: 0px;
+  top: 0px;
   display: flex;
   justify-content: flex-start;
   height: 162px;
-  max-width: 810px;
+  width: 810px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12) 13.82%,
+    rgba(255, 255, 255, 0.04) 53.43%,
+    rgba(255, 255, 255, 0) 95.95%
+  );
+}
+.characteristics__left {
+  width: 177px;
 }
 .characteristics__right {
-  max-width: 632px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   padding: 32px 63px 32px 29px;
+  column-gap: 93px;
 }
 .right__item-column {
   display: flex;
   flex-direction: column;
+  row-gap: 16px;
 }
 .characteristics__right .sub__header-2 {
   line-height: 26px;
   color: rgba(255, 255, 255, 0.6);
-} */
+  text-transform: capitalize;
+}
 .titan__v .main__right-container {
-  padding-top: 0px;
-  padding-right: 29px;
   position: relative;
 }
 .rotate {
   position: absolute;
-  /* bottom: 0px; */
-  right: -40%;
+  top: 31%;
+  right: -34%;
   color: #b49e76;
   opacity: 0.15;
   transform: rotate(90deg);
+  letter-spacing: 12px;
 }
 .rotate::first-letter {
   text-transform: capitalize;
@@ -457,9 +475,10 @@ nav .caption__1 {
 .titan__learn-more {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 138px;
   margin-bottom: 196px;
+  margin-top: 401px;
 }
 .titan__learn-more .header__1 {
   letter-spacing: 0.72px;
@@ -476,6 +495,7 @@ nav .caption__1 {
 .learnMore__right-bottom {
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 .learnMore__right-bottom .sub__header {
   color: var(--color3);
@@ -484,6 +504,16 @@ nav .caption__1 {
 .learnMore__right-bottom .sub__header::first-letter {
   text-transform: capitalize;
 }
+@media (max-width: 1365px) {
+  .rotate {
+    display: none;
+  }
+  .titan__learn-more .header__1 {
+    letter-spacing: 0.72px;
+    line-height: 55px;
+  }
+}
+
 /* gallery */
 .gallery {
   position: relative;
@@ -493,10 +523,11 @@ nav .caption__1 {
   color: #b49e76;
   text-transform: capitalize;
   opacity: 0.2;
+  line-height: 211px;
 }
 .gallery__text {
   position: absolute;
-  bottom: 10px;
+  bottom: 45px;
   color: #fff;
   font-size: 64px;
   font-weight: 300;
@@ -505,6 +536,139 @@ nav .caption__1 {
 }
 .gallery__row {
   display: flex;
+  align-items: center;
+  column-gap: 22px;
+  margin-bottom: 121px;
+}
+.row__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+.row__right-img {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+.row__right-img span {
+  font-size: 25px;
+  color: #fff;
+}
+.gallery__circles-row {
+  display: flex;
+  align-items: center;
+  column-gap: 27px;
+}
+.gallery__circles-row .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0.5px solid #ffdda0;
+}
+.gallery__circles-row .point {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 1365px) {
+  .gallery__row {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 15px;
+  }
+}
+/* footer */
+.footer__row {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 0.5px solid rgba(223, 194, 140, 0.5);
+}
+.footer__row .main__left-container {
+  padding: 35px 18px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__main-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 44px;
+  margin-right: -10px;
+}
+.footer__main-left div {
+  transform: rotate(180deg);
+}
+.footer__main-left p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transform: rotate(270deg);
+  text-transform: uppercase;
+}
+.footer__row .main__right-container {
+  padding: 35px 100px 109px 29px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  display: flex;
+  justify-content: center;
+  column-gap: 86px;
+}
+.footer__column .column__title {
+  margin-bottom: 18px;
+}
+.column__title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.82px;
+  text-transform: uppercase;
+}
+.column__text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 140%;
+  opacity: 0.4;
+  text-transform: capitalize;
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__img-row {
+  margin-top: 22px;
+  margin-bottom: 29px;
+  display: flex;
+  column-gap: 32px;
+}
+
+.footer__right-text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.8;
+}
+@media (max-width: 1365px) {
+  .footer__left {
+    column-gap: 50px;
+  }
+  .footer__img-row {
+    column-gap: 15px;
+  }
+  .footer__right-text {
+    display: none;
+  }
 }
 /* hover на кнопки */
 /* titan learn more не встает по середине, гэп между элементами? */
