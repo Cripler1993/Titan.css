@@ -117,7 +117,13 @@ h6 {
   font-size: 14px;
   font-weight: 400;
 }
-
+/* .scale__class {
+  transform: scale(1.4, 1.4);
+} */
+.border {
+  border: 2px solid rgb(114, 114, 5);
+  outline: 2px solid rgb(114, 114, 5);
+}
 /* header */
 
 .header__img {
@@ -411,6 +417,51 @@ nav .caption__1 {
   line-height: 160%;
   max-width: 604px;
 }
+.ground__breaking .body__1::first-letter {
+  text-transform: capitalize;
+}
+@media (max-width: 1030px) {
+  .design {
+    margin-bottom: 34px;
+  }
+  .design .display__2 {
+    font-size: 85px;
+    letter-spacing: 14.8px;
+  }
+  .design .header__1 {
+    font-size: 24px;
+    bottom: 8px;
+  }
+  .power__suply {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 45px;
+  }
+  .power__suply img {
+    align-self: flex-end;
+    position: relative;
+    top: 25px;
+    /* перенести абсолютом */
+  }
+  .power__suply .sub__header {
+    line-height: 25.2px;
+    font-size: 18px;
+  }
+  .power__suply .body__1 {
+    font-size: 14px;
+    line-height: 16.41px;
+  }
+  .ground__breaking-column {
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-bottom: 41px;
+  }
+  .ground__breaking .header__1 {
+    font-size: 24px;
+    margin-bottom: 13px;
+  }
+}
 /* titan v */
 
 .titan__v {
@@ -513,6 +564,22 @@ nav .caption__1 {
     line-height: 55px;
   }
 }
+@media (max-width: 1030px) {
+  .titan__learn-more {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 35px;
+    margin-bottom: 34px;
+    margin-top: 201px;
+  }
+  .titan__learn-more .header__1 {
+    letter-spacing: 0.36px;
+    line-height: normal;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+}
 
 /* gallery */
 .gallery {
@@ -560,7 +627,7 @@ nav .caption__1 {
   align-items: center;
   column-gap: 27px;
 }
-.gallery__circles-row .circle {
+.gallery__circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,7 +636,7 @@ nav .caption__1 {
   border-radius: 50%;
   border: 0.5px solid #ffdda0;
 }
-.gallery__circles-row .point {
+.gallery__point {
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -580,6 +647,18 @@ nav .caption__1 {
     flex-direction: column;
     column-gap: 0px;
     row-gap: 15px;
+  }
+}
+@media (max-width: 1030px) {
+  .gallery .display__2 {
+    line-height: 120px;
+    letter-spacing: 14.35px;
+    font-size: 82px;
+  }
+  .gallery__text {
+    bottom: 28px;
+    font-size: 24px;
+    letter-spacing: 4.2px;
   }
 }
 /* footer */

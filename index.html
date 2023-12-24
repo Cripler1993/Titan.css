@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <header>
@@ -182,21 +183,27 @@
                 </div>
                 <div class="row__right">
                   <div class="row__right-img">
-                    <span><</span>
-                    <div><img src="./img/gallery/gallery2.png" alt="" /></div>
-                    <div><img src="./img/gallery/gallery3.png" alt="" /></div>
-                    <div><img src="./img/gallery/gallery4.png" alt="" /></div>
-                    <span>></span>
+                    <span class="js__click-left"><</span>
+                    <div class="js__transform scale__class border">
+                      <img src="./img/gallery/gallery2.png" alt="" />
+                    </div>
+                    <div class="js__transform">
+                      <img src="./img/gallery/gallery3.png" alt="" />
+                    </div>
+                    <div class="js__transform">
+                      <img src="./img/gallery/gallery4.png" alt="" />
+                    </div>
+                    <span class="js__click-right">></span>
                   </div>
                   <div class="gallery__circles-row">
-                    <div class="circle">
-                      <p class="point"></p>
+                    <div class="js__circle gallery__circle">
+                      <p class="gallery__point"></p>
                     </div>
-                    <div>
-                      <p class="point"></p>
+                    <div class="js__circle">
+                      <p class="gallery__point"></p>
                     </div>
-                    <div>
-                      <p class="point"></p>
+                    <div class="js__circle">
+                      <p class="gallery__point"></p>
                     </div>
                   </div>
                 </div>
