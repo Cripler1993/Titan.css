@@ -117,9 +117,7 @@ h6 {
   font-size: 14px;
   font-weight: 400;
 }
-/* .scale__class {
-  transform: scale(1.4, 1.4);
-} */
+
 .border {
   border: 2px solid rgb(114, 114, 5);
   outline: 2px solid rgb(114, 114, 5);
@@ -278,6 +276,32 @@ nav .caption__1 {
     max-width: 1021px;
   }
 }
+@media (max-width: 1030px) {
+  .content__container {
+    width: 100%;
+    border-left: 1px solid #fff;
+    padding: 46px 0px 105px 26px;
+  }
+}
+@media (max-width: 933px) {
+  .header__menu-left {
+    display: none;
+  }
+  .content__container {
+    border-left: none;
+    padding: 46px 0px 77px 15px;
+  }
+  .header__right-title .sub__header {
+    font-size: 18px;
+  }
+  .header__right-title .header__1 {
+    font-size: 35px;
+  }
+  .header__right-text {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
 /* powered by */
 .gradient {
   background-image: radial-gradient(
@@ -421,6 +445,21 @@ nav .caption__1 {
   text-transform: capitalize;
 }
 @media (max-width: 1030px) {
+  .main__right-container {
+    padding: 0px 0px 0px 29px;
+  }
+  .powered__row {
+    margin-bottom: 15px;
+  }
+  .powered__row .header__1 {
+    font-size: 24px;
+  }
+  .powered__row .sub__header {
+    font-size: 18px;
+  }
+  .components__block {
+    column-gap: 70px;
+  }
   .design {
     margin-bottom: 34px;
   }
@@ -436,13 +475,16 @@ nav .caption__1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 45px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .suply__img-container {
+    height: 215px;
   }
   .power__suply img {
-    align-self: flex-end;
-    position: relative;
-    top: 25px;
-    /* перенести абсолютом */
+    position: absolute;
+    top: 100px;
+    right: 0px;
   }
   .power__suply .sub__header {
     line-height: 25.2px;
@@ -460,6 +502,38 @@ nav .caption__1 {
   .ground__breaking .header__1 {
     font-size: 24px;
     margin-bottom: 13px;
+  }
+}
+@media (max-width: 933px) {
+  .main__left-container {
+    display: none;
+  }
+  .main__right-container {
+    border-left: none;
+    padding: 0px 0px 0px 15px;
+  }
+  .components__container {
+    display: flex;
+    justify-content: center;
+    max-width: 933px;
+    height: auto;
+    margin-top: 32px;
+    margin-bottom: 34px;
+  }
+  .components__block {
+    width: 100%;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.12) 44.49%,
+      rgba(255, 255, 255, 0) 114.16%
+    );
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+    column-gap: 0px;
+    row-gap: 30px;
+    border-radius: 0px;
   }
 }
 /* titan v */
@@ -580,7 +654,53 @@ nav .caption__1 {
     font-size: 24px;
   }
 }
-
+@media (max-width: 933px) {
+  /* .titan__v .main__left-container {
+    display: flex;
+  } */
+  .characteristics__relative {
+    position: relative;
+  }
+  .titan__v-characteristics {
+    position: static;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    height: 162px;
+    width: 810px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.12) 13.82%,
+      rgba(255, 255, 255, 0.04) 53.43%,
+      rgba(255, 255, 255, 0) 95.95%
+    );
+  }
+  .characteristics__left {
+    width: 177px;
+  }
+  .characteristics__right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 32px 63px 32px 29px;
+    column-gap: 93px;
+  }
+  .right__item-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .characteristics__right .sub__header {
+    font-size: 18px;
+  }
+  .characteristics__right .sub__header-2 {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
 /* gallery */
 .gallery {
   position: relative;
@@ -607,6 +727,7 @@ nav .caption__1 {
   column-gap: 22px;
   margin-bottom: 121px;
 }
+
 .row__right {
   display: flex;
   flex-direction: column;
@@ -621,6 +742,7 @@ nav .caption__1 {
 .row__right-img span {
   font-size: 25px;
   color: #fff;
+  cursor: pointer;
 }
 .gallery__circles-row {
   display: flex;
@@ -659,6 +781,13 @@ nav .caption__1 {
     bottom: 28px;
     font-size: 24px;
     letter-spacing: 4.2px;
+  }
+}
+@media (max-width: 933px) {
+  .gallery__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
   }
 }
 /* footer */
@@ -749,5 +878,17 @@ nav .caption__1 {
     display: none;
   }
 }
+@media (max-width: 933px) {
+  .footer__row .main__left-container {
+    display: none;
+  }
+  .footer__row .main__right-container {
+    padding: 42px 44px 45px 15px;
+  }
+}
 /* hover на кнопки */
-/* titan learn more не встает по середине, гэп между элементами? */
+/* шрифты у футера */
+
+/* верстка 933 components block как растянуть до конца?
+titan v main left container , что можно сделать с блоком?
+позиционирование футера */
