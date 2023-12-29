@@ -1,8 +1,11 @@
 let jsTransform = document.querySelectorAll(".js__transform");
 let jsCircle = document.querySelectorAll(".js__circle");
 let jsImage = document.querySelector(".js__image");
+let leftRow = document.querySelector(".row__left");
+
 let leftClick = document.querySelector(".js__click-left");
 let rightClick = document.querySelector(".js__click-right");
+let closeBtn = document.querySelector(".js__close-img");
 
 let index = 0;
 let imgs = [
@@ -22,6 +25,7 @@ rightClick.addEventListener("click", function () {
   jsTransform[index].classList.add("border");
   jsCircle[index].classList.add("gallery__circle");
   jsImage.src = imgs[index];
+  leftRow.classList.add("active");
 });
 
 leftClick.addEventListener("click", function () {
@@ -34,6 +38,8 @@ leftClick.addEventListener("click", function () {
   }
   jsTransform[index].classList.add("border");
   jsCircle[index].classList.add("gallery__circle");
+  jsImage.src = imgs[index];
+  leftRow.classList.add("active");
 });
 
 function jsClear() {
@@ -47,3 +53,7 @@ function pointClear() {
     elem.classList.remove("gallery__circle");
   });
 }
+
+closeBtn.addEventListener("click", function () {
+  leftRow.classList.remove("active");
+});
