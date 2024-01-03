@@ -268,6 +268,9 @@ nav .caption__1 {
   font-weight: 500;
   text-transform: uppercase;
 }
+.burger__menu {
+  display: none;
+}
 @media (max-width: 1365px) {
   .header__img {
     max-width: 1021px;
@@ -316,6 +319,72 @@ nav .caption__1 {
   }
   .secondary__btn {
     padding: 9px 12px;
+  }
+  /* burger */
+  .header__menu-right {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    row-gap: 55px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+  }
+  .header__menu-right nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 41px;
+  }
+  .burger {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .burger div {
+    height: 3px;
+    background-color: #9b7a3e;
+    width: 16px;
+    border-radius: 13px;
+  }
+
+  .burger__menu {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.933);
+    padding-top: 16px;
+  }
+  .burger__header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger__title {
+    color: var(--color1);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .burger__close {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    bottom: 8px;
   }
 }
 /* powered by */
@@ -531,12 +600,13 @@ nav .caption__1 {
   .components__container {
     display: flex;
     justify-content: center;
-    max-width: 933px;
+    width: 100%;
     height: auto;
     margin-top: 32px;
     margin-bottom: 34px;
   }
   .components__block {
+    max-width: initial;
     width: 100%;
     background-image: linear-gradient(
       90deg,
@@ -552,12 +622,12 @@ nav .caption__1 {
     border-radius: 0px;
   }
 }
-@media (max-width: 675px) {
+/* @media (max-width: 675px) {
   .power__suply img {
     top: 120px;
     right: -125px;
   }
-}
+} */
 /* titan v */
 
 .titan__v {
@@ -677,50 +747,26 @@ nav .caption__1 {
   }
 }
 @media (max-width: 933px) {
-  /* .titan__v .main__left-container {
+  .titan__v .main__left-container {
     display: flex;
-  } */
-  .characteristics__relative {
-    position: relative;
+    width: 0px;
   }
   .titan__v-characteristics {
-    position: static;
-    left: 0px;
-    top: 0px;
-    display: flex;
-    justify-content: flex-start;
-    height: 162px;
-    width: 810px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.12) 13.82%,
-      rgba(255, 255, 255, 0.04) 53.43%,
-      rgba(255, 255, 255, 0) 95.95%
-    );
-  }
-  .characteristics__left {
-    width: 177px;
+    width: 480px;
   }
   .characteristics__right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
     padding: 32px 63px 32px 29px;
-    column-gap: 93px;
-  }
-  .right__item-column {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
   }
   .characteristics__right .sub__header {
     font-size: 18px;
+    white-space: nowrap;
   }
   .characteristics__right .sub__header-2 {
     font-size: 14px;
-    line-height: normal;
+    white-space: nowrap;
+  }
+  .titan__learn-more img:first-child {
+    width: 430px;
   }
 }
 /* gallery */
@@ -884,12 +930,17 @@ nav .caption__1 {
 .footer__row .main__right-container {
   padding: 35px 100px 109px 29px;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
-.footer__left {
+.footer__block {
   display: flex;
-  justify-content: center;
-  column-gap: 86px;
+  width: 100%;
+}
+.footer__column {
+  margin-right: 86px;
+}
+.margin__none {
+  margin-right: 0px;
 }
 .footer__column .column__title {
   margin-bottom: 18px;
@@ -914,6 +965,8 @@ nav .caption__1 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-self: flex-end;
+  flex-grow: 1;
 }
 .footer__img-row {
   margin-top: 22px;
@@ -933,8 +986,8 @@ nav .caption__1 {
   display: flex;
 }
 @media (max-width: 1365px) {
-  .footer__left {
-    column-gap: 50px;
+  .footer__column {
+    margin-right: 50px;
   }
   .footer__img-row {
     column-gap: 15px;
@@ -951,9 +1004,40 @@ nav .caption__1 {
     padding: 42px 44px 45px 15px;
   }
 }
+@media (max-width: 675px) {
+  .footer__block {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+  /* .footer__right {
+    align-items: flex-start;
+  } */
+  .footer__column {
+    margin-right: 50px;
+  }
+  /* .main__right-container .footer__column:first-child {
+    margin-right: 124px;
+  } */
+  .footer__column .column__title {
+    margin-bottom: 13px;
+  }
+  .column__title {
+    font-size: 18px;
+    letter-spacing: 2.34px;
+  }
+  .column__text {
+    font-size: 14px;
+    line-height: 220%;
+    opacity: 0.6;
+  }
+  .footer__right .column__title {
+    display: none;
+  }
+}
 /* hover на кнопки */
 /* шрифты у футера */
-
-/* верстка 933 components block как растянуть до конца?
+/* suply img делает прокрут */
+/*
 titan v main left container , что можно сделать с блоком?
 позиционирование футера */
