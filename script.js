@@ -7,6 +7,11 @@ let leftClick = document.querySelector(".js__click-left");
 let rightClick = document.querySelector(".js__click-right");
 let closeBtn = document.querySelector(".js__close-img");
 
+let burgerOpen = document.querySelector(".burger");
+let burgerClose = document.querySelector(".burger__close");
+let burger = document.querySelector(".burger__menu");
+let navigation = document.querySelector(".header__menu-right");
+
 let index = 0;
 let imgs = [
   "./img/adaptive/Rectangle28.png",
@@ -56,4 +61,14 @@ function pointClear() {
 
 closeBtn.addEventListener("click", function () {
   leftRow.classList.remove("active");
+});
+
+burgerOpen.addEventListener("click", function () {
+  burger.classList.add("active");
+  navigation.classList.add("active");
+});
+
+burgerClose.addEventListener("click", function () {
+  burger.classList.remove("active");
+  navigation.classList.remove("active");
 });
