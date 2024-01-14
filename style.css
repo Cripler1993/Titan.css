@@ -308,10 +308,10 @@ nav .caption__1 {
   }
 }
 @media (max-width: 675px) {
-  /* .container {
-    max-width: 480px;
+  .container {
+    /* max-width: 480px; */
     overflow: hidden;
-  } */
+  }
   .content__container {
     border-left: none;
     padding: 60px 0px 77px 15px;
