@@ -410,9 +410,6 @@ nav .caption__1 {
   }
 }
 @media (max-width: 480px) {
-  /* .container {
-    max-width: 380px;
-  } */
   .burger {
     right: 15px;
   }
@@ -684,6 +681,15 @@ nav .caption__1 {
 @media (max-width: 480px) {
   .main__right-container {
     padding: 0px 0px 0px 5px;
+  }
+  .powered__row {
+    column-gap: 35px;
+  }
+  .powered__row .header__1 {
+    font-size: 22px;
+  }
+  .power__suply img {
+    overflow: hidden;
   }
 }
 /* titan v */
