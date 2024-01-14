@@ -309,7 +309,6 @@ nav .caption__1 {
 }
 @media (max-width: 675px) {
   .container {
-    /* max-width: 480px; */
     overflow: hidden;
   }
   .content__container {
@@ -1113,6 +1112,15 @@ nav .caption__1 {
     column-gap: 45px;
     row-gap: 23px;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .footer__row .main__right-container {
+    column-gap: 90px;
+  }
+  .column__title {
+    font-size: 16px;
+    letter-spacing: 2.34px;
   }
 }
 
