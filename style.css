@@ -971,6 +971,18 @@ nav .caption__1 {
     right: -115px;
   }
 }
+@media (max-width: 480px) {
+  .row__right-img img {
+    width: 95px;
+  }
+  .row__left img {
+    width: 230px;
+  }
+  .js__close-img {
+    top: -30px;
+    right: -105px;
+  }
+}
 /* footer */
 .footer__row {
   display: flex;
@@ -1116,7 +1128,7 @@ nav .caption__1 {
 }
 @media (max-width: 480px) {
   .footer__row .main__right-container {
-    column-gap: 85px;
+    column-gap: 80px;
   }
   .column__title {
     font-size: 16px;
