@@ -1116,7 +1116,7 @@ nav .caption__1 {
 }
 @media (max-width: 480px) {
   .footer__row .main__right-container {
-    column-gap: 90px;
+    column-gap: 85px;
   }
   .column__title {
     font-size: 16px;
