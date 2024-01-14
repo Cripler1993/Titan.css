@@ -830,6 +830,15 @@ nav .caption__1 {
   .titan__learn-more img:first-child {
     width: 430px;
   }
+  @media (max-width: 480px) {
+    .titan__v-characteristics {
+      width: 380px;
+    }
+    .characteristics__right {
+      padding: 32px 63px 32px 29px;
+      column-gap: 30px;
+    }
+  }
 }
 /* gallery */
 .gallery {
