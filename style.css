@@ -308,10 +308,10 @@ nav .caption__1 {
   }
 }
 @media (max-width: 675px) {
-  .container {
+  /* .container {
     max-width: 480px;
-    /* overflow: hidden; */
-  }
+    overflow: hidden;
+  } */
   .content__container {
     border-left: none;
     padding: 60px 0px 77px 15px;
@@ -681,15 +681,13 @@ nav .caption__1 {
 @media (max-width: 480px) {
   .main__right-container {
     padding: 0px 0px 0px 5px;
+    overflow: hidden;
   }
   .powered__row {
     column-gap: 35px;
   }
   .powered__row .header__1 {
     font-size: 22px;
-  }
-  .power__suply img {
-    overflow: hidden;
   }
 }
 /* titan v */
