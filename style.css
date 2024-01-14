@@ -310,7 +310,7 @@ nav .caption__1 {
 @media (max-width: 675px) {
   .container {
     max-width: 480px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .content__container {
     border-left: none;
@@ -410,9 +410,9 @@ nav .caption__1 {
   }
 }
 @media (max-width: 480px) {
-  .container {
+  /* .container {
     max-width: 380px;
-  }
+  } */
   .burger {
     right: 15px;
   }
@@ -431,7 +431,10 @@ nav .caption__1 {
     font-size: 14px;
   }
   .header__btns {
-    column-gap: 18px;
+    column-gap: 30px;
+  }
+  .content__container {
+    padding: 60px 0px 77px 5px;
   }
 }
 /* powered by */
@@ -676,6 +679,11 @@ nav .caption__1 {
   }
   .line__height {
     line-height: 160%;
+  }
+}
+@media (max-width: 480px) {
+  .main__right-container {
+    padding: 0px 0px 0px 5px;
   }
 }
 /* titan v */
