@@ -92,6 +92,10 @@ h6 {
 body {
   overflow-x: hidden;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 .display__2 {
   font-size: 144px;
   font-weight: 400;
